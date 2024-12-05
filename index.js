@@ -3,23 +3,22 @@
  ---------------------------------------- */
 
 const handleFirstTab = (e) => {
-  if(e.key === 'Tab') {
-    document.body.classList.add('user-is-tabbing')
+  if (e.key === "Tab") {
+    document.body.classList.add("user-is-tabbing");
 
-    window.removeEventListener('keydown', handleFirstTab)
-    window.addEventListener('mousedown', handleMouseDownOnce)
+    window.removeEventListener("keydown", handleFirstTab);
+    window.addEventListener("mousedown", handleMouseDownOnce);
   }
-
-}
+};
 
 const handleMouseDownOnce = () => {
-  document.body.classList.remove('user-is-tabbing')
+  document.body.classList.remove("user-is-tabbing");
 
-  window.removeEventListener('mousedown', handleMouseDownOnce)
-  window.addEventListener('keydown', handleFirstTab)
-}
+  window.removeEventListener("mousedown", handleMouseDownOnce);
+  window.addEventListener("keydown", handleFirstTab);
+};
 
-window.addEventListener('keydown', handleFirstTab)
+window.addEventListener("keydown", handleFirstTab);
 
 const backToTopButton = document.querySelector(".back-to-top");
 let isBackToTopRendered = false;
@@ -40,4 +39,31 @@ window.addEventListener("scroll", () => {
     isBackToTopRendered = false;
     alterStyles(isBackToTopRendered);
   }
+});
+
+// Cursor
+
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+window.addEventListener("mousemove", (e) => {
+  const posX = e.clientX;
+  const posY = e.clientY;
+
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+  // cursorOutline.style.left = `${posX}px`;
+  // cursorOutline.style.top = `${posY}px`;
+
+  cursorOutline.animate(
+    {
+      left: `${posX}px`,
+      top: `${posY}px`,
+    },
+    {
+      duration: 500,
+      fill: "forwards",
+    }
+  );
 });
