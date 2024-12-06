@@ -1,275 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/artisanal.jpg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/artisanal.jpg" />
+    <!-- Put your site title here -->
+    <title>
+      ArtiSanal Solutions | A Agency that helps smaller businesses to GROW!!!.
+    </title>
 
-  <!-- Put your site title here -->
-  <title>
-    ArtiSanal Solutions | A Agency that helps smaller businesses to GROW!!!.
-  </title>
+    <meta name="description" content="Add small description of yourslef." />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Put your name, skills and some coding keywords"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <!-- Cursor -->
 
-<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-  <!-- Cursor -->
+    <!-- ***** Header ***** -->
 
-  <div class="cursor-dot"></div>
-  <div class="cursor-outline"></div>
-
-
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>ArtiSanal Solutions</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Agency that helps other businesses to GROW!!!!</p>
-        <div id="hero-btn">
-          <a href="#contact" target="_blank" class="btn--icon btn--orange">
-          <div class="icon--container">
-            <img src="./images/caller.svg" class="icon" alt="caller-link">
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#clients" class="nav__link">Clients</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>ArtiSanal Solutions</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>A Agency that helps other businesses to GROW!!!!</p>
+          <div id="hero-btn">
+            <a href="#contact" target="_blank" class="btn--icon btn--orange">
+              <div class="icon--container">
+                <img src="./images/caller.svg" class="icon" alt="caller-link" />
+              </div>
+              30 Min Call
+            </a>
+            <a
+              href="https:///wa.me/917078244548/"
+              target="_blank"
+              class="btn--icon btn--orange"
+            >
+              <div class="icon--container">
+                <img
+                  src="./images/whatsapp.svg"
+                  class="icon"
+                  alt="whatsapp-link"
+                />
+              </div>
+              WhatsApp
+            </a>
           </div>
-          30 Min Call
-        </a>
-        <a href="https:///wa.me/917078244548/" target="_blank" class="btn--icon btn--orange">
-          <div class="icon--container">
-            <img src="./images/whatsapp.svg" class="icon" alt="whatsapp-link">
-          </div>
-          WhatsApp
-        </a>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main role="main">
+    <main role="main">
+      <!-- Business Services Section -->
+      <section class="section" id="services">
+        <div class="row">
+          <h2>Your Business</h2>
+          <div class="services__boxes">
+            <div class="services__box">
+              <div class="services__icon">
+                <img
+                  src="./images/code-icon.svg"
+                  alt="Custom Website Development"
+                  class="services__code"
+                />
+              </div>
+              <h3>Custom-Crafted Websites</h3>
+              <p>Tailored websites that meet your unique business needs.</p>
+              <a href="#contact" class="btn btn--yellow">Get A Free Quote</a>
+            </div>
 
-    <!-- ***** Work ***** -->
+            <div class="services__box">
+              <div class="services__icon">
+                <img
+                  src="./images/design-icon.svg"
+                  alt="UI/UX Design"
+                  class="services__code"
+                />
+              </div>
+              <h3>Captivating UI/UX</h3>
+              <p>
+                Engaging and intuitive designs that enhance user experience.
+              </p>
+              <a href="#contact" class="btn btn--yellow">Get A Free Quote</a>
+            </div>
 
-    <section class="work" id="work">
+            <div class="services__box">
+              <div class="services__icon">
+                <img
+                  src="./images/support-icon.svg"
+                  alt="Client Support"
+                  class="services__code"
+                />
+              </div>
+              <h3>Complete Client Support</h3>
+              <p>
+                Ongoing care and maintenance to keep your website in top shape.
+              </p>
+              <a href="#contact" class="btn btn--yellow">Get A Free Quote</a>
+            </div>
+          </div>
+          <div class="services__cta">
+            <a href="#contact" class="btn btn--yellow btn--large">
+              📞 Let's Build Something Amazing
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="work" id="portfolio">
+        <div class="row">
+          <h2>Portfolio</h2>
+          <div class="portfolio__filters">
+            <button class="filter-btn active">Ecommerce</button>
+            <button class="filter-btn">Landing Pages</button>
+            <button class="filter-btn">Web Apps</button>
+            <button class="filter-btn">Branding</button>
+            <button class="filter-btn">Marketing</button>
+          </div>
+
+          <div class="work__boxes">
+            <div class="work__box">
+              <div class="work__image-box">
+                <img
+                  src="./images/luxandco.jpg"
+                  class="work__image"
+                  alt="Luxury Goods Website"
+                />
+              </div>
+              <div class="work__text">
+                <h3>luxandcoaustralia.com.au</h3>
+                <p>Luxury goods e-commerce platform</p>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__image-box">
+                <img
+                  src="./images/saltysweat.jpg"
+                  class="work__image"
+                  alt="Fitness Website"
+                />
+              </div>
+              <div class="work__text">
+                <h3>saltysweat.com</h3>
+                <p>Sports and fitness equipment store</p>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__image-box">
+                <img
+                  src="./images/yesyoucan.jpg"
+                  class="work__image"
+                  alt="Beverage Website"
+                />
+              </div>
+              <div class="work__text">
+                <h3>yesyoucandrinks.com</h3>
+                <p>Non-alcoholic beverages e-commerce</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__cta">
+            <button class="btn btn--yellow">Ask For More ↓</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Work ***** -->
+
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Portfolio Template</h3>
+                <p>A free Open Source Portfolio for anyone to use for free.</p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                  <li>Parcel</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://nisar.surge.sh"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/nisarhassan12/portfolio"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/project-1.png"
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Calculator</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                  eius.
+                </p>
+                <ul class="work__list">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Node</li>
+                  <li>MongoDB</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="#" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/project-2.png"
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Notificator</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                  eius.
+                </p>
+                <ul class="work__list">
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Node</li>
+                  <li>MongoDB</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="#" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/project-3.png"
+                  class="work__image"
+                  alt="Project 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Clients ***** -->
+
+      <section class="client" id="clients">
+        <div class="row">
+          <h2>Clients</h2>
+          <div class="client__logos">
+            <!-- Add logos of the clients or companies you'have worked with. -->
+            <img
+              src="./images/ez-credit-repair-logo.png"
+              class="client__logo"
+              alt="Company 2"
+            />
+            <img
+              src="./images/all-assignment-help-logo.png"
+              class="client__logo"
+              alt="Company 3"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="choose-us" id="why-choose">
+        <div class="row">
+          <h2>Why Choose <span class="highlight">ArtiSanal</span></h2>
+
+          <div class="choose-us__container">
+            <div class="choose-us__content">
+              <div class="choose-us__item active">
+                <h3>Solutions That Align with Your Workflow</h3>
+                <p>
+                  Transform cumbersome processes into sleek, interactive
+                  applications that seamlessly integrate all your needs,
+                  regardless of complexity.
+                </p>
+              </div>
+
+              <div class="choose-us__item">
+                <h3>Solutions That Meet Your Deadlines</h3>
+                <p>
+                  We understand the importance of timely delivery and ensure
+                  your project launches on schedule without compromising
+                  quality.
+                </p>
+              </div>
+
+              <div class="choose-us__item">
+                <h3>Solutions That Exceed Your Expectations</h3>
+                <p>
+                  We go beyond the basic requirements to deliver solutions that
+                  bring additional value to your business.
+                </p>
+              </div>
+
+              <a href="#contact" class="btn btn--yellow">Get A Free Quote ↑</a>
+            </div>
+
+            <div class="choose-us__image">
+              <img src="./images/workflow-laptop.png" alt="Workflow Diagram" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Us</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
+                nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
+                in vel, ex quam quidem quos mollitia labore aut sunt eius
+                ratione molestiae fuga veniam facere similique voluptate.
+              </p>
+              <!-- Provide a link to your resume -->
+              <a href="#" class="btn">My Resume</a>
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img
+                class="about__photo"
+                src="./images/syed-ali-hussnain.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Are you looking for a fast-performing and user-friendly website to
+            represent your product or business? or looking for any kind of
+            consultation? or want to ask questions? or have some advice for me
+            or just want to say "Hi 👋" in any case feel free to Let me know. I
+            will do my best to respond back. 😊 The quickest way to reach out to
+            me is via an email.
+          </p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:you@example.com" class="btn">you@example.com</a>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Footer ***** -->
 
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ez-credit-repair-logo.png" class="client__logo" alt="Company 2" />
-          <img src="./images/all-assignment-help-logo.png" class="client__logo" alt="Company 3" />
-        </div>
-      </div>
-    </section>
+    <footer role="contentinfo" class="footer">
+      <div class="footer__curve">
+        <div class="row">
+          <div class="footer__content">
+            <div class="footer__section">
+              <h4>Our Offices</h4>
+              <ul>
+                <li>India: Mohali, PB</li>
+                <li>Canada: Vancouver, BC</li>
+                <li>Dubai: Disclosing Soon*</li>
+              </ul>
+            </div>
 
-    <!-- ***** About ***** -->
+            <div class="footer__section">
+              <h4>News Feed</h4>
+              <ul>
+                <li><a href="#">In the Media</a></li>
+                <li><a href="#">Blogs and News</a></li>
+                <li><a href="#">Vlogs & Reels</a></li>
+              </ul>
+            </div>
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Us</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <div class="footer__section">
+              <h4>Legal Terms</h4>
+              <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Copy Content Policy*</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__section">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Humans of ArtiSanal</a></li>
+                <li><a href="#">Join ArtiSanal as Intern</a></li>
+                <li><a href="#">Become a Part of Team</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          <div class="footer__team">
+            <div class="team-member">
+              <img src="./images/team/member1.jpg" alt="Team Member" />
+              <span>John Doe</span>
+            </div>
+            <div class="team-member">
+              <img src="./images/team/member2.jpg" alt="Team Member" />
+              <span>Jane Smith</span>
+            </div>
+            <div class="team-member">
+              <img src="./images/team/member3.jpg" alt="Team Member" />
+              <span>Mike Johnson</span>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <p>&copy; 2024 ArtiSanal Solutions. All Rights Reserved</p>
+            <div class="footer__certificates">
+              <img src="./images/cert1.png" alt="Certification" />
+              <img src="./images/cert2.png" alt="Certification" />
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>
