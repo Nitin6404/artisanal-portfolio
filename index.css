@@ -978,20 +978,26 @@ body:not(.user-is-tabbing) a:focus {
 
 .portfolio__filters {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 1rem;
 }
 
 .filter-btn {
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #f0f0f0;
+  margin: var(--gutter-small);
+  padding: var(--gutter-small);
+  width: 20%;
+  background-color: var(--white-1);
   border: none;
   cursor: pointer;
+  font-size: var(--font-size-small);
+}
+
+.filter-btn:hover {
+  background-color: var(--orange);
 }
 
 .filter-btn.active {
-  background-color: #ffcc00; /* Highlight active filter */
+  background-color: var(--orange); /* Highlight active filter */
 }
 
 .portfolio__boxes {
