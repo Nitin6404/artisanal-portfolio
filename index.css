@@ -889,13 +889,7 @@ body:not(.user-is-tabbing) a:focus {
 /* Updated Footer Styles */
 .footer {
   position: relative;
-  margin-top: var(--gutter-huge);
-}
-
-.footer__curve {
-  background-color: var(--orange);
-  border-radius: 100% 100% 0 0;
-  padding: var(--gutter-huge) 0 var(--gutter-medium);
+  margin-top: var(--gutter-small);
 }
 
 .footer__content {
