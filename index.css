@@ -612,7 +612,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__content {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -629,13 +628,41 @@ body:not(.user-is-tabbing) a:focus {
 
 @media (min-width: 901px) {
   .about__text {
-    flex: 0 0 35%;
+    /* flex: 0 0 35%; */
+    margin-right: var(--gutter-huge);
   }
 
   .about__photo-container {
     flex: 1;
     margin: 0 var(--gutter-huge) 0 0;
   }
+}
+
+.about__team {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--gutter-medium);
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular profile pictures */
+  margin-bottom: var(--gutter-small);
+}
+
+.team-member h3 {
+  font-size: var(--font-size-medium);
+  margin: var(--gutter-small) 0;
+}
+
+.team-member p {
+  font-size: var(--font-size-small);
+  color: var(--white-1);
 }
 
 /* --------------------------------------- */
@@ -1009,10 +1036,23 @@ body:not(.user-is-tabbing) a:focus {
 .portfolio__box {
   margin: 1rem;
   width: 30%; /* Adjust width as needed */
+  position: relative;
 }
 
 .portfolio__box img {
   width: 100%;
   height: auto;
   border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.portfolio__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 8px 8px; /* Optional: for rounded corners */
 }
