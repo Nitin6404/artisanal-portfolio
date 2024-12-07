@@ -28,6 +28,7 @@
   padding: 0;
   box-sizing: inherit;
   cursor: none;
+  font-family: var(--font-stack);
 }
 
 :root {
@@ -130,7 +131,7 @@ img {
 h1,
 h2,
 h3 {
-  font-family: "Jost", sans-serif;
+  font-family: "Change One";
   font-weight: 400;
   line-height: var(--line-height-small);
   color: var(--white);
@@ -223,7 +224,6 @@ p {
 a {
   color: var(--white);
   font-weight: 400;
-  font-family: "Jost", sans-serif;
   transition: all 0.2s;
   outline: 2px solid transparent;
 }
@@ -286,13 +286,14 @@ body:not(.user-is-tabbing) a:focus {
 
 .icon {
   display: inline;
-  height: 3rem;
+  height: var(--gutter-normal);
   /* margin-left: var(--gutter-normal); */
   transition: all 0.3s;
 }
 
-.icon: hover {
+.icon:hover {
   transform: scale(1.2);
+  filter: invert(100%) grayscale(100%) opacity(0.8);
 }
 
 .btn:focus {
@@ -366,7 +367,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .link__text span {
   padding-left: 1rem;
-  font-family: sans-serif;
 }
 
 /* ----- Back to Top ----- */
@@ -494,7 +494,6 @@ body:not(.user-is-tabbing) a:focus {
 .header__text p {
   margin: 1.5rem 0 3.5rem;
   max-width: var(--container-medium-width);
-  font-family: "Jost", sans-serif;
   font-size: var(--font-size-medium);
 }
 
@@ -692,14 +691,14 @@ body:not(.user-is-tabbing) a:focus {
 .services__boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--gutter-medium);
+  gap: var(--gutter-normal);
   margin-top: var(--gutter-medium);
 }
 
 .services__box {
-  background: var(--white);
+  background: var(--white-1);
   border-radius: 8px;
-  padding: var(--gutter-medium);
+  padding: var(--gutter-normal);
   text-align: center;
   transition: transform 0.3s;
 }
@@ -711,7 +710,8 @@ body:not(.user-is-tabbing) a:focus {
 .services__icon {
   width: 80px;
   height: 80px;
-  margin: 0 auto var(--gutter-normal);
+  /* margin: 0 auto var(--gutter-normal); */
+  margin-bottom: var(--gutter-normal);
   background: var(--orange);
   border-radius: 50%;
   display: flex;
@@ -727,6 +727,8 @@ body:not(.user-is-tabbing) a:focus {
 .services__cta {
   text-align: center;
   margin-top: var(--gutter-huge);
+  display: flex;
+  justify-content: center;
 }
 
 /* Portfolio Section */
