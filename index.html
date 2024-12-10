@@ -1,348 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./images/artisanal.jpg" />
 
-    <!-- Put your site title here -->
-    <title>
-      ArtiSanal Solutions | A Agency that helps smaller businesses to GROW!!!.
-    </title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/artisanal.jpg" />
 
-    <meta name="description" content="Add small description of yourslef." />
-    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-    <meta
-      name="keywords"
-      content="Put your name, skills and some coding keywords"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
+  <!-- Put your site title here -->
+  <title>
+    ArtiSanal Solutions | A Agency that helps smaller businesses to GROW!!!.
+  </title>
 
-  <body>
-    <!-- Cursor -->
+  <meta name="description" content="Add small description of yourslef." />
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+<body>
+  <!-- Cursor -->
 
-    <!-- ***** Header ***** -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-    <header class="header" role="banner" id="top">
-      <div class="row">
-        <nav class="nav" role="navigation">
-          <ul class="nav__items">
-            <li class="nav__item">
-              <a href="#gallery" class="nav__link">Gallery</a>
-            </li>
-            <li class="nav__item">
-              <a href="#clients" class="nav__link">Clients</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link">Gallery</a>
+          </li>
+          <li class="nav__item">
+            <a href="#clients" class="nav__link">Clients</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>ArtiSanal Solutions</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Agency that helps other businesses to GROW!!!!</p>
+        <div id="hero-btn">
+          <a href="https:///wa.me/917078244548/" target="_blank" class="btn btn--orange">
+            Contact Us
+          </a>
+        </div>
       </div>
-      <div class="header__text-box row">
-        <div class="header__text">
-          <h1 class="heading-primary">
-            <!-- Replace the following name with your name -->
-            <span>ArtiSanal Solutions</span>
-          </h1>
-          <!-- Put a small paragraph about yourself -->
-          <p>A Agency that helps other businesses to GROW!!!!</p>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Business Services Section -->
+    <section class="section" id="services">
+      <div class="row">
+        <h2>Our Business</h2>
+        <div class="services__boxes">
+          <div class="services__box">
+            <div class="services__icon">
+              <img src="./images/web-programming.png" alt="Custom Website Development" class="services__code" />
+            </div>
+            <h3>Custom-Crafted Websites</h3>
+            <p>Tailored websites that meet your unique business needs.</p>
+            <a href="#contact" class="btn btn--orange">Get A Free Quote</a>
+          </div>
+
+          <div class="services__box">
+            <div class="services__icon">
+              <img src="./images/ux-design.png" alt="UI/UX Design" class="services__code" />
+            </div>
+            <h3>Captivating UI/UX</h3>
+            <p>
+              Engaging and intuitive designs that enhance user experience.
+            </p>
+            <a href="#contact" class="btn btn--orange">Get A Free Quote</a>
+          </div>
+
+          <div class="services__box">
+            <div class="services__icon">
+              <img src="./images/online-chat.png" alt="Client Support" class="services__code" />
+            </div>
+            <h3>Complete Client Support</h3>
+            <p>
+              Ongoing care and maintenance to keep your website in top shape.
+            </p>
+            <a href="#contact" class="btn btn--orange">Get A Free Quote</a>
+          </div>
+        </div>
+        <div class="services__cta">
+          <a href="#contact" class="btn--icon btn--orange btn--large">
+            <span> Say Hii, Don't be shy! </span>
+            <img class="icon" src="/images/hand-wave.svg" alt="hand-wave" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Galley Section -->
+    <section class="work" id="gallery">
+      <div class="row">
+        <h2>Projects Gallery</h2>
+        <div class="portfolio__filters">
+          <button class="filter-btn active">Web Applications</button>
+          <button class="filter-btn">AI Applications</button>
+          <button class="filter-btn">UI/UX</button>
+        </div>
+
+        <div class="portfolio__boxes">
+          <a class="portfolio__box" href="https://trakiz.tech/">
+            <iframe scrolling="no" class="portfolio__box__iframe" src="https://trakiz.tech/"></iframe>
+          </a>
+          <a class="portfolio__box" href="https://trakiz.tech/">
+            <iframe scrolling="no"class="portfolio__box__iframe" src="https://trakiz.tech/"></iframe>
+          </a>
+          <a class="portfolio__box" href="https://trakiz.tech/">
+            <iframe scrolling="no"class="portfolio__box__iframe" src="https://trakiz.tech/"></iframe>
+          </a>
+        </div>
+
+        <!--<div class="portfolio__boxes">-->
+        <!--  <div class="portfolio__box">-->
+        <!--    <a href="https://luxandco.com.au/" target="_blank">-->
+        <!--      <img-->
+        <!--        src="https://via.placeholder.com/300x200?text=Lux+%26+Co"-->
+        <!--        alt="Lux & Co"-->
+        <!--      />-->
+        <!--      <div class="portfolio__text">-->
+        <!--        <h3>Lux & Co</h3>-->
+        <!--        <p>Gifting Luxury - Organic and Eco-Friendly Products</p>-->
+        <!--      </div>-->
+        <!--    </a>-->
+        <!--  </div>-->
+        <!--  <div class="portfolio__box">-->
+        <!--    <a href="https://saltysweat.com/" target="_blank">-->
+        <!--      <img-->
+        <!--        src="https://via.placeholder.com/300x200?text=Salty+Sweat"-->
+        <!--        alt="Salty Sweat"-->
+        <!--      />-->
+        <!--      <div class="portfolio__text">-->
+        <!--        <h3>Salty Sweat</h3>-->
+        <!--        <p>Sports and Fitness Equipment Store</p>-->
+        <!--      </div>-->
+        <!--    </a>-->
+        <!--  </div>-->
+        <!--  <div class="portfolio__box">-->
+        <!--    <a href="https://yesyoucandrinks.com/" target="_blank">-->
+        <!--      <img-->
+        <!--        src="https://via.placeholder.com/300x200?text=Yes+You+Can+Drinks"-->
+        <!--        alt="Yes You Can Drinks"-->
+        <!--      />-->
+        <!--      <div class="portfolio__text">-->
+        <!--        <h3>Yes You Can Drinks</h3>-->
+        <!--        <p>Non-Alcoholic Beverages E-commerce</p>-->
+        <!--      </div>-->
+        <!--    </a>-->
+        <!--  </div>-->
+        <!--</div> -->
+
+        <div class="portfolio__cta">
+          <button class="btn--icon btn--orange btn--large">Ask For More ↓</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/ez-credit-repair-logo.png" class="client__logo" alt="Company 2" />
+          <img src="./images/all-assignment-help-logo.png" class="client__logo" alt="Company 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="choose-us" id="why-choose">
+      <div class="row">
+        <h2>Why Choose <span class="highlight">ArtiSanal</span></h2>
+
+        <div class="choose-us__container">
+          <div class="choose-us__content">
+            <div class="choose-us__item">
+              <h3>Solutions That Align with Your Workflow</h3>
+              <p>
+                Transform cumbersome processes into sleek, interactive
+                applications that seamlessly integrate all your needs,
+                regardless of complexity.
+              </p>
+            </div>
+          </div>
+
+          <div class="choose-us__content">
+            <div class="choose-us__item">
+              <h3>Solutions That Align with Your Workflow</h3>
+              <p>
+                Transform cumbersome processes into sleek, interactive
+                applications that seamlessly integrate all your needs,
+                regardless of complexity.
+              </p>
+            </div>
+          </div>
+
+          <div class="choose-us__content">
+            <div class="choose-us__item">
+              <h3>Solutions That Align with Your Workflow</h3>
+              <p>
+                Transform cumbersome processes into sleek, interactive
+                applications that seamlessly integrate all your needs,
+                regardless of complexity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="choose-us-btn__container">
+          <a href="#contact" class="btn--icon btn--orange btn--large mt-16">
+            Give Us A Try
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Us</h2>
+        <div class="about__team">
+          <div class="team-member">
+            <img src="./images/nitin.png" alt="Nitin - Full Stack Developer" />
+            <h3>Nitin</h3>
+            <p>Full Stack Developer</p>
+          </div>
+          <div class="team-member">
+            <img src="./images/shibtain.png" alt="Shibtain - UI/UX Designer" />
+            <h3>Shibtain</h3>
+            <p>UI/UX Designer</p>
+          </div>
+          <div class="team-member">
+            <img src="./images/asif.png" alt="Asif - Backend Developer" />
+            <h3>Asif</h3>
+            <p>Backend Developer</p>
+          </div>
+        </div>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Hii, We are ARTISANAL SOLUTION. We are a team of developers and
+              designers who are passionate about creating beautiful,
+              user-friendly websites and applications. We specialize in custom
+              website development, UI/UX design, and ongoing client support.
+              Our goal is to help businesses grow by providing them with the
+              tools they need to succeed online. We take pride in our work and
+              strive to deliver the best possible results for our clients. If
+              you're looking for a team that is dedicated to your success,
+              look no further than ArtiSanal Solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:nc1575612@gmail.com" class="btn">E-Mail Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="footer__curve">
+      <div class="row">
+        <div class="footer__bottom">
+          <p>&copy; 2024 ArtiSanal Solutions. All Rights Reserved</p>
           <div id="hero-btn">
-            <a
-              href="https:///wa.me/917078244548/"
-              target="_blank"
-              class="btn btn--orange"
-            >
+            <a href="https:///wa.me/917078244548/" target="_blank" class="btn btn--orange">
               Contact Us
             </a>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </footer>
 
-    <main role="main">
-      <!-- Business Services Section -->
-      <section class="section" id="services">
-        <div class="row">
-          <h2>Our Business</h2>
-          <div class="services__boxes">
-            <div class="services__box">
-              <div class="services__icon">
-                <img
-                  src="./images/web-programming.png"
-                  alt="Custom Website Development"
-                  class="services__code"
-                />
-              </div>
-              <h3>Custom-Crafted Websites</h3>
-              <p>Tailored websites that meet your unique business needs.</p>
-              <a href="#contact" class="btn btn--orange">Get A Free Quote</a>
-            </div>
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+  </a>
+  <script src="./index.js"></script>
+</body>
 
-            <div class="services__box">
-              <div class="services__icon">
-                <img
-                  src="./images/ux-design.png"
-                  alt="UI/UX Design"
-                  class="services__code"
-                />
-              </div>
-              <h3>Captivating UI/UX</h3>
-              <p>
-                Engaging and intuitive designs that enhance user experience.
-              </p>
-              <a href="#contact" class="btn btn--orange">Get A Free Quote</a>
-            </div>
-
-            <div class="services__box">
-              <div class="services__icon">
-                <img
-                  src="./images/online-chat.png"
-                  alt="Client Support"
-                  class="services__code"
-                />
-              </div>
-              <h3>Complete Client Support</h3>
-              <p>
-                Ongoing care and maintenance to keep your website in top shape.
-              </p>
-              <a href="#contact" class="btn btn--orange">Get A Free Quote</a>
-            </div>
-          </div>
-          <div class="services__cta">
-            <a href="#contact" class="btn--icon btn--orange btn--large">
-              <span> Say Hii, Don't be shy! </span>
-              <img class="icon" src="/images/hand-wave.svg" alt="hand-wave" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Portfolio Galley Section -->
-      <section class="work" id="gallery">
-        <div class="row">
-          <h2>Projects Gallery</h2>
-          <div class="portfolio__filters">
-            <button class="filter-btn active">Web Applications</button>
-            <button class="filter-btn">AI Applications</button>
-            <button class="filter-btn">UI/UX</button>
-          </div>
-
-          <!-- <div class="portfolio__boxes">
-            <div class="portfolio__box">
-              <a href="https://luxandco.com.au/" target="_blank">
-                <img
-                  src="https://via.placeholder.com/300x200?text=Lux+%26+Co"
-                  alt="Lux & Co"
-                />
-                <div class="portfolio__text">
-                  <h3>Lux & Co</h3>
-                  <p>Gifting Luxury - Organic and Eco-Friendly Products</p>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio__box">
-              <a href="https://saltysweat.com/" target="_blank">
-                <img
-                  src="https://via.placeholder.com/300x200?text=Salty+Sweat"
-                  alt="Salty Sweat"
-                />
-                <div class="portfolio__text">
-                  <h3>Salty Sweat</h3>
-                  <p>Sports and Fitness Equipment Store</p>
-                </div>
-              </a>
-            </div>
-            <div class="portfolio__box">
-              <a href="https://yesyoucandrinks.com/" target="_blank">
-                <img
-                  src="https://via.placeholder.com/300x200?text=Yes+You+Can+Drinks"
-                  alt="Yes You Can Drinks"
-                />
-                <div class="portfolio__text">
-                  <h3>Yes You Can Drinks</h3>
-                  <p>Non-Alcoholic Beverages E-commerce</p>
-                </div>
-              </a>
-            </div>
-          </div> -->
-
-          <!-- <div class="portfolio__cta">
-            <button class="btn btn--orange">Ask For More ↓</button>
-          </div> -->
-        </div>
-      </section>
-
-      <!-- ***** Clients ***** -->
-
-      <section class="client" id="clients">
-        <div class="row">
-          <h2>Clients</h2>
-          <div class="client__logos">
-            <!-- Add logos of the clients or companies you'have worked with. -->
-            <img
-              src="./images/ez-credit-repair-logo.png"
-              class="client__logo"
-              alt="Company 2"
-            />
-            <img
-              src="./images/all-assignment-help-logo.png"
-              class="client__logo"
-              alt="Company 3"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Choose Us Section -->
-      <section class="choose-us" id="why-choose">
-        <div class="row">
-          <h2>Why Choose <span class="highlight">ArtiSanal</span></h2>
-
-          <div class="choose-us__container">
-            <div class="choose-us__content">
-              <div class="choose-us__item">
-                <h3>Solutions That Align with Your Workflow</h3>
-                <p>
-                  Transform cumbersome processes into sleek, interactive
-                  applications that seamlessly integrate all your needs,
-                  regardless of complexity.
-                </p>
-              </div>
-            </div>
-
-            <div class="choose-us__content">
-              <div class="choose-us__item">
-                <h3>Solutions That Align with Your Workflow</h3>
-                <p>
-                  Transform cumbersome processes into sleek, interactive
-                  applications that seamlessly integrate all your needs,
-                  regardless of complexity.
-                </p>
-              </div>
-            </div>
-
-            <div class="choose-us__content">
-              <div class="choose-us__item">
-                <h3>Solutions That Align with Your Workflow</h3>
-                <p>
-                  Transform cumbersome processes into sleek, interactive
-                  applications that seamlessly integrate all your needs,
-                  regardless of complexity.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="choose-us-btn__container">
-            <a href="#contact" class="btn--icon btn--orange btn--large mt-16">
-              Give Us A Try
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ***** About ***** -->
-
-      <section class="about" id="about">
-        <div class="row">
-          <h2>About Us</h2>
-          <div class="about__team">
-            <div class="team-member">
-              <img
-                src="./images/nitin.png"
-                alt="Nitin - Full Stack Developer"
-              />
-              <h3>Nitin</h3>
-              <p>Full Stack Developer</p>
-            </div>
-            <div class="team-member">
-              <img
-                src="./images/shibtain.png"
-                alt="Shibtain - UI/UX Designer"
-              />
-              <h3>Shibtain</h3>
-              <p>UI/UX Designer</p>
-            </div>
-            <div class="team-member">
-              <img src="./images/asif.png" alt="Asif - Backend Developer" />
-              <h3>Asif</h3>
-              <p>Backend Developer</p>
-            </div>
-          </div>
-          <div class="about__content">
-            <div class="about__text">
-              <p>
-                Hii, We are ARTISANAL SOLUTION. We are a team of developers and
-                designers who are passionate about creating beautiful,
-                user-friendly websites and applications. We specialize in custom
-                website development, UI/UX design, and ongoing client support.
-                Our goal is to help businesses grow by providing them with the
-                tools they need to succeed online. We take pride in our work and
-                strive to deliver the best possible results for our clients. If
-                you're looking for a team that is dedicated to your success,
-                look no further than ArtiSanal Solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ***** Contact ***** -->
-
-    <section class="contact" id="contact">
-      <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>
-            Are you looking for a fast-performing and user-friendly website to
-            represent your product or business? or looking for any kind of
-            consultation? or want to ask questions? or have some advice for me
-            or just want to say "Hi 👋" in any case feel free to Let me know. I
-            will do my best to respond back. 😊 The quickest way to reach out to
-            me is via an email.
-          </p>
-          <!-- Replace the email with yours -->
-          <a href="mailto:nc1575612@gmail.com" class="btn">E-Mail Us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Footer ***** -->
-
-    <footer role="contentinfo" class="footer">
-      <div class="footer__curve">
-        <div class="row">
-          <div class="footer__bottom">
-            <p>&copy; 2024 ArtiSanal Solutions. All Rights Reserved</p>
-            <div id="hero-btn">
-              <a
-                href="https:///wa.me/917078244548/"
-                target="_blank"
-                class="btn btn--orange"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <a href="#top" class="back-to-top" title="Back to Top">
-      <img
-        src="./images/arrow-up.svg"
-        alt="Back to Top"
-        class="back-to-top__image"
-      />
-    </a>
-    <script src="./index.js"></script>
-  </body>
 </html>

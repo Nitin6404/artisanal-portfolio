@@ -44,6 +44,7 @@
   --line-height-small: 1.2;
 
   --black: #000;
+  --black-card: #151515;
   --orange: #ff851b;
   --white: #f0e9f2;
   --white-1: #e5e5e6da;
@@ -253,6 +254,7 @@ body:not(.user-is-tabbing) a:focus {
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--orange);
+  border-radius: 30px;
   font-weight: 400;
 }
 
@@ -274,6 +276,7 @@ body:not(.user-is-tabbing) a:focus {
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--orange);
+  border-radius: 40px;
   font-weight: 400;
 }
 
@@ -723,7 +726,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .services__box {
-  background: var(--white-1);
+  background: var(--black-card);
   border-radius: 8px;
   padding: var(--gutter-normal);
   text-align: center;
@@ -812,11 +815,6 @@ body:not(.user-is-tabbing) a:focus {
   text-align: center;
 }
 
-.portfolio__cta {
-  text-align: center;
-  margin-top: var(--gutter-medium);
-}
-
 /* Responsive Adjustments */
 @media (max-width: 900px) {
   .services__boxes {
@@ -865,7 +863,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .choose-us__item {
   border: var(--border-light);
-  background: var(--bg-dark);
+  background: var(--black-card);
   padding: var(--gutter-medium);
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -1030,7 +1028,30 @@ body:not(.user-is-tabbing) a:focus {
 .portfolio__box {
   margin: 1rem;
   width: 30%; /* Adjust width as needed */
+  height: 100%;
   position: relative;
+  border-style: solid;
+  border-width: 15px 15px 15px 15px;
+  border-color: var(--white-1);
+}
+
+.portfolio__box__iframe {
+  width: 100%;
+  border-style: none;
+}
+
+@media (min-width: 900px){
+  .portfolio__box {
+    height: 450px;
+  }
+
+  .portfolio__box__iframe {
+    height: 420px;
+  }
+  
+  .portfolio__cta {
+    width: 100%;
+  }
 }
 
 .portfolio__box img {
@@ -1049,4 +1070,12 @@ body:not(.user-is-tabbing) a:focus {
   padding: 1rem;
   text-align: center;
   border-radius: 0 0 8px 8px; /* Optional: for rounded corners */
+}
+
+.portfolio__cta {
+  text-align: end;
+  margin-top: var(--gutter-medium);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
